@@ -1,0 +1,267 @@
+body{
+  background-color: #F6F6F6;
+}
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navimgarea{
+  height: 710px;
+  border-radius: 0 0 50% 50% / 0 0 7% 7%;
+  background-color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navlist{
+  width: 86%;
+  padding-top: 55px;
+  margin: 0 auto;
+  position: relative;
+}
+ul{
+  color: #fff;
+  display: flex;
+}
+.imageIcon{
+  width: 292px;
+}
+li:first-child{
+  margin-right: auto;
+}
+.navText{
+  line-height: 80px;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  position: relative;
+  font-weight:100;
+}
+.navText::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #fff;
+  transition: all .5s;
+  opacity: 0;
+}
+.navText:hover::after{
+  opacity: 1;
+  background-color: #fff;
+}
+.undermark img{
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  color: #fff;
+}
+
+/* case-1詳細設定 */
+.case-1{
+  text-align: center;
+
+}
+.case-1 h1{
+  font-size: 50px;
+  margin: 120px  auto 50px;
+}
+.case-1 .center1{
+  text-align: left;
+  font-family: serif;
+  width: 40%;
+  font-size: 23px;
+  margin: 0 auto 30px;
+  line-height: 35px;
+}
+.case-1 .center1:last-child{
+  padding-bottom: 100px;
+}
+
+.case-1 h2{
+  font-size: 50px;
+  margin: 50px auto;
+}
+/* case-2詳細設定 */
+.case-2{
+  background-color: #fff;
+}
+.allTop{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  width: 85%;
+  margin: 0 auto 50px;
+}
+.allTop-left{
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+.allTop-right{
+  padding: 15px 60px;
+  border: solid 1px;
+}
+.thumbnailarea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 0px;
+
+}
+.thumbnailarea p{
+  width: 30%;
+  text-align: center;
+}
+.thumbnailarea a{
+  display: inline-block;
+  width: 85%;
+  font-size: 25px;
+  margin: 50px auto;
+  text-align: left;
+  transition: all .5s;
+}
+.thumbnailarea a:hover{
+  opacity: .5;
+}
+
+/* case-3詳細設定 */
+.flex-area{
+  display: flex;
+  color: #808080;
+  transition: all .4s;
+}
+
+.flexright a{
+  display: inline-block;
+  width: 100%;
+  padding: 10px 50px 0;
+}
+.flexright .flex-area-title{
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: serif;
+  color: #000;
+}
+.flexright .flex-area-text{
+  margin-bottom: 80px;
+}
+.flex-area:hover{
+  opacity: .6;
+}
+
+
+/* case-4詳細設定 */
+.case-4{
+  background-color: #fff;
+  height: 150px;
+  position: relative;
+}
+.btm{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-10%, -10%);
+  background-color: #fff;
+  transition: all .5s;
+}
+.btm::before{
+  position: absolute;
+  display: block;
+  content: "";
+  top: 40%;
+  left: 30%;
+  width: 20px;
+  height: 20px;
+  border-bottom: solid 2px;
+  border-right: solid 2px;
+  transform: translate(-50%, 50px);
+  transform: rotate(-135deg);
+  transition: all .5s;
+}
+.btm:hover{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-10%, -20%);
+  background-color: #fff;
+}
+.case-4items{
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+.case-4item{
+  display: inline-block;
+  font-family: serif;
+  height: 50px;
+  width: 150px;
+  border: solid 2px;
+}
+.case-4item a{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+.Facebook{
+  color: #4871A9;
+}
+.Twitter{
+  color: #70BDD3;
+}
+.Bookmark{
+  color: #2F9BCD;
+}
+
+
+/* case-5詳細設定 */
+.case-5{
+  background-color: #939899;
+  height: 80px;
+}
+.case-5 ul{
+  width: 45%;
+  margin: 0 auto;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+.case-5 li{
+  padding-top: 35px;
+}
+.case-5 li:first-child{
+  margin-right: 0;
+}
+
+
+
+footer{
+  background-color: #656C6E;
+  height: 150px;
+}
+footer .container{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+footer img{
+  display: inline-block;
+  width: 100px;
+
+}
+footer small{
+  display: inline-block;
+  line-height: 100px;
+  color: #fff;
+}
