@@ -20,9 +20,9 @@ body{
 }
 .slide img{
   position:absolute;
-	opacity:0;
-	transition:all 1s ease-in-out;
-	height:100%;
+	/* opacity:0;
+	transition:all 1s ease-in-out; */
+	height:auto;
   width: 100%;
   border-radius: 0 0 50% 50% / 0 0 7% 7%;
 }
