@@ -7,10 +7,24 @@ body{
 }
 
 .navimgarea{
+  position: relative;
   height: 710px;
-  border-radius: 0 0 50% 50% / 0 0 7% 7%;
-  background-color: blue;
+  width: 100%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide img{
+  position:absolute;
+	/* opacity:0;
+	transition:all 1s ease-in-out; */
+	height:auto;
+  width: 100%;
+  border-radius: 0 0 50% 50% / 0 0 7% 7%;
 }
 .navlist{
   width: 86%;

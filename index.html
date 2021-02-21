@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="js/index.js" defer></script>
   <title>Document</title>
 
   </style>
@@ -13,15 +15,36 @@
 <body>
   <header>
     <div class="navimgarea">
-      <div class="navlist">
+      <p class=""><img class="mobileIcon" src="img/siteLogo-small@2x.png" alt=""></p>
+      <div id="navlistmobile" class="navlistmobile">
+        <ul>
+          <li class="navText"><a href="">TOP</a></li>
+          <li class="navText"><a href="">PRODUCT</a></li>
+          <li class="navText"><a href="">ABOUT</a></li>
+          <li class="navText"><a href="">NEWS</a></li>
+          <li class="navText"><a href="">CONTACT</a></li>
+          <div class="navber">
+            <p class="menu">MENU</p>
+            <p id="menuIcon" class="menuIcon">…</p>
+          </div>
+        </ul>
+      </div>
+      <div class="navlistpc">
         <ul>
           <li><a href=""><img class="imageIcon" src="img/siteLogo-pc@2x.png" alt=""></a></li>
-          <li class="navText">TOP</li>
-          <li class="navText">PRODUCT</li>
-          <li class="navText">ABOUT</li>
-          <li class="navText">NEWS</li>
-          <li class="navText">CONTACT</li>
+          <li class="navText"><a href="">TOP</a></li>
+          <li class="navText"><a href="">PRODUCT</a></li>
+          <li class="navText"><a href="">ABOUT</a></li>
+          <li class="navText"><a href="">NEWS</a></li>
+          <li class="navText"><a href="">CONTACT</a></li>
         </ul>
+      </div>
+      <div class="slide">
+        <img src="img/main_visual_111-0x0.jpg" alt="">
+        <img src="img/main_visual_13-0x0.jpg" alt="">
+        <img src="img/main_visual_2-0x0.jpg" alt="">
+        <img src="img/main_visual_6-0x0.jpg" alt="">
+        <img src="img/main_visual_7-0x0.jpg" alt="">
       </div>
       <div class="undermark"><img src="img/button-arrow@2x.png" alt=""></div>
     </div>
@@ -30,7 +53,7 @@
   <main>
     <div class="case-1">
       <div class="container">
-        <h1>旅に出よう。</h1>
+        <h5>旅に出よう。</h5>
         <div class="center1 text1">
           <p>僕たちが作りたいのは</p>
           <p>持っているだけで旅に出たくなるモノ。</p>
@@ -47,7 +70,7 @@
           <p>僕たちは、みんなでひとつのモノを</p>
           <p>作ることを追求したい。</p>
         </div>
-        <h2>「PAS-POL」</h2>
+        <h2>「 PAS-POL 」</h2>
         <div class="center1 text4">
           <p>それは、自分と世界を繋げる</p>
           <p>旅のモノづくりブランド</p>
