@@ -3,7 +3,7 @@ body{
 }
 .navimgarea {
   position: relative;
-  height: 810px;
+  height: 885px;
 }
 
 /* PCナビバー */
@@ -16,9 +16,9 @@ body{
 .mobileIcon {
   position: absolute;
   width: 110px;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   z-index: 99;
 }
 
@@ -67,7 +67,7 @@ body{
 .slide {
   position: absolute;
   top: 0;
-  height: 730px;
+  height: 805px;
   width: 100%;
   z-index: 1;
 }
@@ -90,8 +90,7 @@ body{
 
 /* case-1 詳細設定 */
 .case-1{
-  height: 560px;
-
+  height: 550px;
 }
 .container{
   width: 87%;
@@ -124,11 +123,44 @@ body{
   margin-bottom: 30px;
 }
 .case-2{
+  position: relative;
   background-color: #fff;
 }
 
+.case-2 .allTop{
+  padding-top: 10vh;
+}
+.allTop-left{
+  position: absolute;
+  font-size: 27px;
+  letter-spacing: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.allTop-right{
+  position: absolute;
+  left: 35vw;
+  bottom: 75px;
+  border: solid 1px;
+  padding: 10px 60px;
+}
+.thumbnailarea{
+  padding-top: 8.7vh;
+  padding-bottom: 23.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-
+.iconItems .itemText{
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  padding: 5px 45px 0;
+  margin-bottom: 6vh;
+}
 
 
 
@@ -142,8 +174,11 @@ body{
   .mobileIcon{
     display: none;
   }
+  .allTop-right{
+    border: none;
+  }
   .navimgarea {
-    height: 760px;
+    height: 112.3vh;
   }
   .navlistpc {
     display: block;
@@ -172,7 +207,7 @@ body{
   .slide {
     position: absolute;
     top: 0;
-    height: 635px;
+    height: 96vh;
     width: 100%;
     z-index: 1;
   }
@@ -184,9 +219,9 @@ body{
     object-fit: cover;
   }
 
-  /*  */
+  /* PCsace-1詳細設定 */
   .case-1{
-    height: 790px;
+    height: 108vh;
   }
   .container{
     width: 90%;
@@ -226,7 +261,41 @@ body{
   }
   .case-2{
     background-color: #fff;
+    height: 176.8vh;
+    position: relative;
+  }
+  .allTop-left{
+    left: 23.3%;
+    top: 8.5%;
+    transform: translate(-10%, 0);
   }
 
+  .allTop-right{
+    top: 8.5%;
+    position: absolute;
+    left: 66.5%;
+    border: solid 1px;
+    bottom: 88%;
+  }
+  .thumbnailarea{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20vh;
+  }
+  .iconItems{
+    width: 33%;
+    margin-bottom: 5vh;
+  }
+  .thumbnailarea img{
+    width: 240px;
+    height: 320px;
+    margin-bottom: 20px;
+  }
 
+  .itemText{
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
