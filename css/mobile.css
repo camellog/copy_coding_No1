@@ -11,6 +11,9 @@ body{
   display: none;
   position: absolute;
 }
+.flex-area-text{
+  display: none;
+}
 
 /* スマホアイコン */
 .mobileIcon {
@@ -90,7 +93,7 @@ body{
 
 /* case-1 詳細設定 */
 .case-1{
-  height: 550px;
+  height: 75.5vh;
 }
 .container{
   width: 87%;
@@ -125,6 +128,7 @@ body{
 .case-2{
   position: relative;
   background-color: #fff;
+  height: 602.5vh;
 }
 
 .case-2 .allTop{
@@ -162,10 +166,150 @@ body{
   margin-bottom: 6vh;
 }
 
+/* .case-3 */
+
+.allTop-3{
+  height: 130px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.allTop-3{
+  font-size: 30px;
+  font-family: serif;
+}
+
+.allTop-left-3,.allTop-right-3{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.allTop-left-3{
+  top: 50px;
+  border-bottom: solid 1px;
+}
+.allTop-right-3{
+  top: 2470px;
+  font-size: 14px;
+  border: solid 1px;
+  padding: 15px 60px;
+}
+.newsarea{
+  text-align: center;
+}
+.flexright{
+  width: 400px;
+  margin: 0 auto 50px;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: serif;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.case-3-last{
+  margin-bottom: 150px;
+}
+.flex-area-time{
+  font-size: 12px;
+  color: #696969;
+  letter-spacing:0px;
+}
+.case-4{
+  height: 180px;
+  position: relative;
+}
+.btm{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  transition: all .2s;
+}
+.btm:hover{
+  top: -30px;
+}
+.btm::before{
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 20px;
+  left: 18px;
+  transform: rotate(-135deg);
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  z-index: 10;
+}
+.case-4items{
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.case-4item{
+  width: 50%;
+  height: 60px;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: serif;
+}
+.case-4item a{
+  display: inline-block;
+  width: 95%;
+  height: 50px;
+  border: solid 1px;
+}
+.Facebook,.Twitter,.Bookmark,.Line{
+  transition: all .5s;
+}
+.Facebook{
+  color: #4871A9;
+}
+.Twitter{
+  color: #70BDD3;
+}
+.Bookmark{
+  color: #2F9BCD;
+}
+.Line{
+  color: #8EC09D;
+}
+/* ホバー時処理 */
+.Facebook:hover{
+  background-color: #4871A9;
+  color: #fff;
+}
+.Twitter:hover{
+  background-color: #4871A9;
+  color: #fff;
+}
+.Bookmark:hover{
+  background-color: #2F9BCD;
+  color: #fff;
+}
+.Line:hover{
+  background-color: #8EC09D;
+  color: #fff;
+  }
 
 
 
 
+.case-4{
+  background-color: #fff;
+}
+.case-5{
+  background-color: wheat;
+}
+.footer{
+  background-color: thistle;
+}
 /* PC設定 */
 @media screen and (min-width: 900px) {
   .navlistmobile {
@@ -176,6 +320,9 @@ body{
   }
   .allTop-right{
     border: none;
+  }
+  .flex-area-text{
+    display: block;
   }
   .navimgarea {
     height: 112.3vh;
@@ -298,4 +445,60 @@ body{
     font-size: 20px;
     line-height: 30px;
   }
+
+  /* case-3 */
+  .allTop-3{
+    margin-bottom: 100px;
+  }
+  .allTop-left-3{
+    top: 100px;
+    left: 400px;
+  }
+  .allTop-right-3{
+    top: 100px;
+    left: 1100px;
+  }
+
+
+  .newsarea{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .flex-area{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .flexleft{
+    width: 350px;
+  }
+  .flex-area-imgs{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  .flex-area-imgs img{
+    width: 350px;
+    padding-top: 10px;
+  }
+
+  .flexright{
+    width: 100%;
+    height: 100%;
+  }
+  .flex-area-title,.flex-area-time,.flex-area-text{
+    padding-bottom: 10px;
+  }
+  .flexright a{
+    display: inline-block;
+    width: 100%;
+    padding-left:50px;
+  }
+  .flex-area-text{
+    font-size: 14px;
+    height: 100%;
+  }
+
+
 }
