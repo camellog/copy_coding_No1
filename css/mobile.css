@@ -128,7 +128,7 @@ body{
 .case-2{
   position: relative;
   background-color: #fff;
-  height: 602.5vh;
+  height: 542.5vh;
 }
 
 .case-2 .allTop{
@@ -218,6 +218,7 @@ body{
 .case-4{
   height: 180px;
   position: relative;
+  background-color: #fff;
 }
 .btm{
   position: absolute;
@@ -286,7 +287,7 @@ body{
   color: #fff;
 }
 .Twitter:hover{
-  background-color: #4871A9;
+  background-color: #70BDD3;
   color: #fff;
 }
 .Bookmark:hover{
@@ -298,20 +299,46 @@ body{
   color: #fff;
   }
 
-
-
-
-.case-4{
-  background-color: #fff;
-}
+/* case-5詳細設定 */
 .case-5{
-  background-color: wheat;
+  background-color: #939899;
 }
-.footer{
-  background-color: thistle;
+.case-5 ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+.case-5 li{
+  display: inline-block;
+  border-bottom: solid 1px #fff;
+  width: 100%;
+
+}
+.case-5 li:last-child{
+  border-bottom: none;
+}
+.case-5 a{
+  display: inline-block;
+  width: 100%;
+  padding: 18px 0;
+  color: #fff;
+}
+.case-5 a:hover{
+  color: #C1C4C5;
+}
+
+
+/* footer詳細設定 */
+footer{
+  background-color: #656C6E;
+  height: 220px;
+}
+
+
+
 /* PC設定 */
 @media screen and (min-width: 900px) {
+  /* 非表示処理と表示処理 */
   .navlistmobile {
     display: none;
   }
@@ -321,9 +348,13 @@ body{
   .allTop-right{
     border: none;
   }
+  .pcnone{
+    display: none;
+  }
   .flex-area-text{
     display: block;
   }
+    /* 非表示処理と表示処理 */
   .navimgarea {
     height: 112.3vh;
   }
@@ -499,6 +530,34 @@ body{
     font-size: 14px;
     height: 100%;
   }
+  .case-4{
+    height: 100px;
+  }
+  .case-4items{
+    width: 650px;
+    padding-top: 25px;
+    margin: 0 auto;
+  }
+  .case-4item{
+    width: 200px;
+  }
 
+
+
+  /* case-5詳細設定 */
+.case-5{
+  height: 100px;
+}
+.case-5 ul{
+  display: flex;
+  flex-direction: unset;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.case-5 li{
+  border-bottom: none;
+  line-height: 65px;
+}
 
 }
