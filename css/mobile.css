@@ -3,7 +3,7 @@ body{
 }
 .navimgarea {
   position: relative;
-  height: 810px;
+  height: 885px;
 }
 
 /* PCナビバー */
@@ -11,14 +11,17 @@ body{
   display: none;
   position: absolute;
 }
+.flex-area-text{
+  display: none;
+}
 
 /* スマホアイコン */
 .mobileIcon {
   position: absolute;
   width: 110px;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   z-index: 99;
 }
 
@@ -67,7 +70,7 @@ body{
 .slide {
   position: absolute;
   top: 0;
-  height: 730px;
+  height: 805px;
   width: 100%;
   z-index: 1;
 }
@@ -90,8 +93,7 @@ body{
 
 /* case-1 詳細設定 */
 .case-1{
-  height: 560px;
-
+  height: 75.5vh;
 }
 .container{
   width: 87%;
@@ -124,26 +126,237 @@ body{
   margin-bottom: 30px;
 }
 .case-2{
+  position: relative;
   background-color: #fff;
+  height: 542.5vh;
+}
+
+.case-2 .allTop{
+  padding-top: 10vh;
+}
+.allTop-left{
+  position: absolute;
+  font-size: 27px;
+  letter-spacing: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.allTop-right{
+  position: absolute;
+  left: 35vw;
+  bottom: 75px;
+  border: solid 1px;
+  padding: 10px 60px;
+}
+.thumbnailarea{
+  padding-top: 8.7vh;
+  padding-bottom: 23.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconItems .itemText{
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  padding: 5px 45px 0;
+  margin-bottom: 6vh;
+}
+
+/* .case-3 */
+
+.allTop-3{
+  height: 130px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.allTop-3{
+  font-size: 30px;
+  font-family: serif;
+}
+
+.allTop-left-3,.allTop-right-3{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.allTop-left-3{
+  top: 50px;
+  border-bottom: solid 1px;
+}
+.allTop-right-3{
+  top: 2470px;
+  font-size: 14px;
+  border: solid 1px;
+  padding: 15px 60px;
+}
+.newsarea{
+  text-align: center;
+}
+.flexright{
+  width: 400px;
+  margin: 0 auto 50px;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: serif;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.case-3-last{
+  margin-bottom: 150px;
+}
+.flex-area-time{
+  font-size: 12px;
+  color: #696969;
+  letter-spacing:0px;
+}
+.case-4{
+  height: 180px;
+  position: relative;
+  background-color: #fff;
+}
+.btm{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  transition: all .2s;
+}
+.btm:hover{
+  top: -30px;
+}
+.btm::before{
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 20px;
+  left: 18px;
+  transform: rotate(-135deg);
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  z-index: 10;
+}
+.case-4items{
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.case-4item{
+  width: 50%;
+  height: 60px;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: serif;
+}
+.case-4item a{
+  display: inline-block;
+  width: 95%;
+  height: 50px;
+  border: solid 1px;
+}
+.Facebook,.Twitter,.Bookmark,.Line{
+  transition: all .5s;
+}
+.Facebook{
+  color: #4871A9;
+}
+.Twitter{
+  color: #70BDD3;
+}
+.Bookmark{
+  color: #2F9BCD;
+}
+.Line{
+  color: #8EC09D;
+}
+/* ホバー時処理 */
+.Facebook:hover{
+  background-color: #4871A9;
+  color: #fff;
+}
+.Twitter:hover{
+  background-color: #70BDD3;
+  color: #fff;
+}
+.Bookmark:hover{
+  background-color: #2F9BCD;
+  color: #fff;
+}
+.Line:hover{
+  background-color: #8EC09D;
+  color: #fff;
+  }
+
+/* case-5詳細設定 */
+.case-5{
+  background-color: #939899;
+}
+.case-5 ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.case-5 li{
+  display: inline-block;
+  border-bottom: solid 1px #fff;
+  width: 100%;
+
+}
+.case-5 li:last-child{
+  border-bottom: none;
+}
+.case-5 a{
+  display: inline-block;
+  width: 100%;
+  padding: 18px 0;
+  color: #fff;
+}
+.case-5 a:hover{
+  color: #C1C4C5;
 }
 
 
-
-
-
+/* footer詳細設定 */
+footer{
+  background-color: #656C6E;
+  height: 220px;
+}
 
 
 
 /* PC設定 */
 @media screen and (min-width: 900px) {
+  /* 非表示処理と表示処理 */
   .navlistmobile {
     display: none;
   }
   .mobileIcon{
     display: none;
   }
+  .allTop-right{
+    border: none;
+  }
+  .pcnone{
+    display: none;
+  }
+  .flex-area-text{
+    display: block;
+  }
+    /* 非表示処理と表示処理 */
   .navimgarea {
-    height: 760px;
+    height: 112.3vh;
   }
   .navlistpc {
     display: block;
@@ -172,7 +385,7 @@ body{
   .slide {
     position: absolute;
     top: 0;
-    height: 635px;
+    height: 96vh;
     width: 100%;
     z-index: 1;
   }
@@ -184,9 +397,9 @@ body{
     object-fit: cover;
   }
 
-  /*  */
+  /* PCsace-1詳細設定 */
   .case-1{
-    height: 790px;
+    height: 108vh;
   }
   .container{
     width: 90%;
@@ -226,7 +439,125 @@ body{
   }
   .case-2{
     background-color: #fff;
+    height: 176.8vh;
+    position: relative;
+  }
+  .allTop-left{
+    left: 23.3%;
+    top: 8.5%;
+    transform: translate(-10%, 0);
   }
 
+  .allTop-right{
+    top: 8.5%;
+    position: absolute;
+    left: 66.5%;
+    border: solid 1px;
+    bottom: 88%;
+  }
+  .thumbnailarea{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20vh;
+  }
+  .iconItems{
+    width: 33%;
+    margin-bottom: 5vh;
+  }
+  .thumbnailarea img{
+    width: 240px;
+    height: 320px;
+    margin-bottom: 20px;
+  }
+
+  .itemText{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* case-3 */
+  .allTop-3{
+    margin-bottom: 100px;
+  }
+  .allTop-left-3{
+    top: 100px;
+    left: 400px;
+  }
+  .allTop-right-3{
+    top: 100px;
+    left: 1100px;
+  }
+
+
+  .newsarea{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .flex-area{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .flexleft{
+    width: 350px;
+  }
+  .flex-area-imgs{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  .flex-area-imgs img{
+    width: 350px;
+    padding-top: 10px;
+  }
+
+  .flexright{
+    width: 100%;
+    height: 100%;
+  }
+  .flex-area-title,.flex-area-time,.flex-area-text{
+    padding-bottom: 10px;
+  }
+  .flexright a{
+    display: inline-block;
+    width: 100%;
+    padding-left:50px;
+  }
+  .flex-area-text{
+    font-size: 14px;
+    height: 100%;
+  }
+  .case-4{
+    height: 100px;
+  }
+  .case-4items{
+    width: 650px;
+    padding-top: 25px;
+    margin: 0 auto;
+  }
+  .case-4item{
+    width: 200px;
+  }
+
+
+
+  /* case-5詳細設定 */
+.case-5{
+  height: 100px;
+}
+.case-5 ul{
+  display: flex;
+  flex-direction: unset;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.case-5 li{
+  border-bottom: none;
+  line-height: 65px;
+}
 
 }
